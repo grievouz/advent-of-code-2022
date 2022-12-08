@@ -1,0 +1,4 @@
+next = _{NEWLINE?}
+meal = { '0'..'9'+ }
+elf = { (meal ~ next)+ }
+list = _{ SOI ~ (elf ~ next)+ }
